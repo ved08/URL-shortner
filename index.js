@@ -47,7 +47,7 @@ app.get('/:keyword', (req, res) => {
     })
     .catch(err => console.log(err))
 })
-const port = 3000
+const port = process.env.port ||3000
 mongoose.connect(DBuri, options) 
   .then(() => app.listen(port))
   .catch(err => console.log(err));
