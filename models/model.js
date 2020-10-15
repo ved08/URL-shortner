@@ -12,6 +12,6 @@ const x = new Schema({
   }
 }, {timestamps: true})
 
-const Url = mongoose.model('veds', x)
+const Url = mongoose.model('Route', x)
 
 module.exports = Url
